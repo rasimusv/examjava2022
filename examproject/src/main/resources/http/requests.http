@@ -1,0 +1,52 @@
+POST http://localhost/login
+Content-Type: application/json
+
+{
+  "email": "rasim@gmail.com",
+  "password": "qwerty007"
+}
+
+###
+
+GET http://localhost/token
+
+###
+
+POST http://localhost/signup
+Content-Type: application/json
+
+{
+  "email": "rasim@gmail.com",
+  "password": "qwerty007",
+  "firstName": "Расим",
+  "lastName": "Гарипов",
+  "patronymic": "Ильнурович",
+  "state": "ACTIVE",
+  "role": "USER"
+}
+
+###
+
+GET http://localhost:80/logout
+X-TOKEN: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwicm9sZSI6IlVTRVIiLCJzdGF0ZSI6IkFDVElWRSIsImV4cCI6MTY0MzI0MjkzMiwiZW1haWwiOiJyYXNpbUBnbWFpbC5jb20ifQ.cwUbfVlQK9G1-LKO6K5Qw3Y2XFrly2KX5VWz2sUk2Ew
+###
+
+POST http://localhost/youarethebest
+X-TOKEN: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwicm9sZSI6IlVTRVIiLCJzdGF0ZSI6IkFDVElWRSIsImV4cCI6MTY0MzI1MTIyMiwiZW1haWwiOiJyYXNpbUBnbWFpbC5jb20ifQ.B26i9pqDmMAHunJp3ZAKzJW0J_VbUzDG2KTdjrxYGbo
+Content-Type: application/json
+
+{
+  "firstName": "Marsel",
+  "lastName": "Sidikov"
+}
+
+###
+
+POST http://localhost/youarebad
+X-TOKEN: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwicm9sZSI6IlVTRVIiLCJzdGF0ZSI6IkFDVElWRSIsImV4cCI6MTY0MzI1MTIyMiwiZW1haWwiOiJyYXNpbUBnbWFpbC5jb20ifQ.B26i9pqDmMAHunJp3ZAKzJW0J_VbUzDG2KTdjrxYGbo
+Content-Type: application/json
+
+{
+"firstName": "Rasim",
+"lastName": "Garipov"
+}
