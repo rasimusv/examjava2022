@@ -64,6 +64,4 @@ services:
 
 volumes:
   pgdata:
-    external: true
   redis-volume:
-    external: true
